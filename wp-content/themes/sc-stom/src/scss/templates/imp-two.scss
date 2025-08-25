@@ -3,6 +3,9 @@
   @media all and (max-width: 1920px){
     margin-bottom: px(100);
   }
+  @media all and (max-width: 500px){
+    margin-bottom: px(40);
+  }
   &__container{
     @media all and (max-width: 1920px){
 
@@ -26,6 +29,11 @@
       grid-template-columns: px(420) 1fr;
       gap: px(20);
     }
+    @media all and (max-width: 768px){
+      display: block;
+      padding-top: 0;
+      margin-bottom: px(30);
+    }
     p{
       margin-bottom: 58px;
       font-size: 24px;
@@ -33,6 +41,17 @@
       @media all and (max-width: 1920px){
         margin-bottom: px(58);
         font-size: px(24);
+      }
+      @media all and (max-width: 768px){
+        margin-bottom: 1em;
+        line-height: normal;
+      }
+      @media all and (max-width: 500px){
+        font-size: px(18);
+      }
+      @media all and (max-width: 480px){
+        font-size: px(12);
+        margin-bottom: 0.5em;
       }
       &:before{
         content: "•";
@@ -50,6 +69,9 @@
       margin-bottom: px(24);
       font-size: px(48);
     }
+    @media all and (max-width: 480px){
+      font-size: px(22);
+    }
     strong{
       font-weight: 600;
     }
@@ -62,6 +84,12 @@
     @media all and (max-width: 1920px){
       font-size: px(24);
       margin-bottom: px(64);
+    }
+    @media all and (max-width: 768px){
+      margin-bottom: px(40);
+    }
+    @media all and (max-width: 480px){
+      font-size: px(16);
     }
     i{
       font-style: italic;
@@ -76,6 +104,9 @@
       @media all and (max-width: 1920px){
         width: px(538);
         border-radius: px(16);
+      }
+      @media all and (max-width: 480px){
+        width: px(260);
       }
       img{
         width: 100%;

@@ -7,6 +7,10 @@
     padding-bottom: px(50);
     margin-bottom: px(82);
   }
+  @media all and (max-width: 480px){
+    padding-top: px(120);
+    margin-bottom: 0;
+  }
   &__container{
     @media all and (max-width: 1920px){
 
@@ -19,6 +23,11 @@
     margin-bottom: 24px;
     @media all and (max-width: 1920px){
       margin-bottom: px(24);
+    }
+    @media all and (max-width: 480px){
+      br{
+        display: none;
+      }
     }
     strong{
       font-weight: 600;
@@ -33,22 +42,39 @@
       font-size: px(24);
       margin-bottom: px(64);
     }
+    @media all and (max-width: 480px){
+      font-size: px(18);
+      margin-bottom: px(40);
+      br{
+        display: none;
+      }
+    }
   }
   &__btns{
     margin-bottom: 73px;
     @media all and (max-width: 1920px){
       margin-bottom: px(73);
     }
+    @media all and (max-width: 480px){
+      margin-bottom: px(40);
+    }
     .button{
       width: 300px;
       @media all and (max-width: 1920px){
         width: px(300);
+      }
+      @media all and (max-width: 480px){
+        margin-bottom: px(16);
+        width: 100%;
       }
       &-blue{
         background-color: #000125;
         margin-right: 16px;
         @media all and (max-width: 1920px){
           margin-right: px(16);
+        }
+        @media all and (max-width: 480px){
+          margin-right: 0;
         }
         span{
 
@@ -71,6 +97,9 @@
       @media all and (max-width: 1920px){
         width: px(369);
         border-radius: px(16);
+      }
+      @media all and (max-width: 480px){
+        width: px(260);
       }
       img{
         width: 100%;

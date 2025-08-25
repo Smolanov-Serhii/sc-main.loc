@@ -1,7 +1,7 @@
 <?php
 $post_id = get_the_ID();
 ?>
-<section class="rev">
+<section class="rev" id="rev">
     <div class="rev__container main-container">
         <div class="swiper-container">
             <div class="rev__slider swiper-wrapper">

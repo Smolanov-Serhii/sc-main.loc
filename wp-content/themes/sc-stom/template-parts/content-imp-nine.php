@@ -36,26 +36,6 @@ $post_id = get_the_ID();
                         </div>
                     <?php
                     endwhile;
-                    while( have_rows('slajder_bloka_9',$post_id) ) : the_row();
-                        $image = get_sub_field('kartynka_slajda');
-                        $name = get_sub_field('ymya');
-                        $rev = get_sub_field('otzv');
-                        ?>
-                        <div class="imp-nine__slide swiper-slide">
-                            <div class="imp-nine__img">
-                                <img src="<?php echo $image;?>">
-                            </div>
-                            <div class="imp-nine__text">
-                                <div class="imp-nine__name">
-                                    <?php echo $name;?>
-                                </div>
-                                <div class="imp-nine__rev">
-                                    <?php echo $rev;?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php
-                    endwhile;
                     echo '</div>';
                 endif;
                 ?>

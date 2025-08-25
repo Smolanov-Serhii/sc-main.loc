@@ -127,7 +127,7 @@ $(document).ready(function () {
         var NineSlider = new Swiper(".imp-nine .swiper-container", {
             slidesPerView: 'auto',
             spaceBetween: 16,
-            loop: true,
+            // loop: true,
         });
     }
 
@@ -142,6 +142,19 @@ $(document).ready(function () {
             loop: true,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                '320': {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                '768': {
+                    slidesPerView: 3.5,
+                    spaceBetween: 12,
+                },
+                '1024': {
+                    slidesPerView: 5,
+                },
+            },
 
         });
         var RevImpSlider = new Swiper ('.imp-eight__main .swiper-container', {
@@ -166,23 +179,25 @@ $(document).ready(function () {
             $('.popup-zapis').fadeOut(300);
             $('.call-back').fadeOut(300);
             $('#success-send').fadeIn(300);
-            // $('.wpcf7-response-output').empty();
+            $('.wpcf7-response-output').empty();
             setTimeout(function () {
                 $('#success-send').fadeOut(300);
                 $('body').removeClass('locked');
             }, 2000);
 
         }, false);
+        $(".js-zapis").click(function () {
+            $('body').addClass('locked');
+            $('.popup-zapis').fadeIn(300);
+        });
         $(".js-form").click(function () {
-            // $('body').addClass('locked');
-            // $('.popup-zapis').fadeIn(300);
             $('body').addClass('locked');
             $('.call-back').fadeIn(300);
         });
-        // $(".js-messenger").click(function () {
-        //     $('body').addClass('locked');
-        //     $('.call-back').fadeIn(300);
-        // });
+        $(".js-messenger").click(function () {
+            $('body').addClass('locked');
+            $('.call-back').fadeIn(300);
+        });
         $(".popup-zapis__close").click(function () {
             $('body').removeClass('locked');
             $('.call-back').fadeOut(300);

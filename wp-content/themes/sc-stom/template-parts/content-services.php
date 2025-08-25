@@ -35,6 +35,7 @@ $post_id = get_the_ID();
                             $desc = get_sub_field('opisanie');
                             $image = get_sub_field('kartinka_predlozheniya');
                             $price = get_sub_field('czena');
+                            $lnk = get_sub_field('sslka_na_stranyczu');
                             ?>
                             <div class="services__contents-elem">
                                 <div class="services__contents-text">
@@ -46,6 +47,12 @@ $post_id = get_the_ID();
                                     </div>
                                     <div class="services__contents-price">
                                         <?php echo $price;?>
+                                        <?php
+                                            if ($lnk){
+                                                echo '<a style="margin-left: 1em; color: #000; text-decoration: none;" href="'.$lnk.'" target="_blank">'. get_field('tekst_podrobnee', $post_id).' ></a>';
+                                            }
+                                        ?>
+
                                     </div>
                                 </div>
                                 <div class="services__contents-img">

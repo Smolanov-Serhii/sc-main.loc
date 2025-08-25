@@ -6,6 +6,9 @@
     .swiper-container{
 
     }
+    .swiper-wrapper{
+      display: flex;
+    }
     .swiper-slide{
       transition: 0.3s ease;
       max-height: 70vh;
@@ -14,6 +17,12 @@
       position: relative;
       @media all and (max-width: 1920px){
         height: px(1080);
+      }
+      @media all and (max-width: 768px){
+        height: px(600);
+      }
+      @media all and (max-width: 500px){
+        height: px(400);
       }
       .imp-eight__img{
         height: 100%;
@@ -32,6 +41,12 @@
         @media all and (max-width: 1920px){
           bottom: px(64);
         }
+        @media all and (max-width: 768px){
+          bottom: px(40);
+        }
+        @media all and (max-width: 500px){
+          bottom: px(20);
+        }
       }
       .imp-eight__name{
         font-size: 48px;
@@ -39,6 +54,15 @@
         color: #FFF;
         @media all and (max-width: 1920px){
           font-size: px(48);
+        }
+        @media all and (max-width: 768px){
+          font-size: px(38)
+        }
+        @media all and (max-width: 500px){
+          font-size: px(28);
+        }
+        @media all and (max-width: 480px){
+          font-size: px(20);
         }
       }
       .imp-eight__rev{
@@ -48,6 +72,16 @@
         max-width: 70%;
         @media all and (max-width: 1920px){
           font-size: px(24);
+        }
+        @media all and (max-width: 768px){
+          font-size: px(18);
+          max-width: none;
+        }
+        @media all and (max-width: 500px){
+          font-size: px(14);
+        }
+        @media all and (max-width: 480px){
+          font-size: px(12);
         }
       }
     }

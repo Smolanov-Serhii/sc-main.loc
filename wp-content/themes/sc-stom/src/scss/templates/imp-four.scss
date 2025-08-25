@@ -1,6 +1,13 @@
 .imp-four{
   margin-top: 0;
   margin-bottom: 0;
+  .video__container {
+    @media all and (max-width: 768px){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
   .video__play{
     margin-bottom: 0;
     transition: 0.3s ease;

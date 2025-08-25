@@ -6,6 +6,9 @@
     padding-top: px(74);
     padding-bottom: px(82);
   }
+  @media all and (max-width: 1024px){
+    padding: px(40) 0;
+  }
   &__title{
     font-weight: 400;
     strong{
@@ -35,6 +38,23 @@
       padding: px(42) px(24);
       min-height: px(279);
     }
+    @media all and (max-width: 1024px){
+      width: calc(50% - px(20));
+      margin-bottom: px(40);
+      br{
+        display: none;
+      }
+    }
+    @media all and (max-width: 768px){
+      width: 100%;
+      margin-bottom: px(20);
+      min-height: auto;
+      padding: px(20);
+      border-radius: px(12);
+    }
+    @media all and (max-width: 500px){
+      margin-bottom: px(12);
+    }
     &-title{
       font-size: 24px;
       margin-bottom: 1em;
@@ -43,6 +63,9 @@
       position: relative;
       @media all and (max-width: 1920px){
         font-size: px(24);
+      }
+      @media all and (max-width: 768px){
+        font-size: px(18);
       }
     }
     &-desc{
@@ -53,6 +76,12 @@
       position: relative;
       @media all and (max-width: 1920px){
         font-size: px(24);
+      }
+      @media all and (max-width: 768px){
+        font-size: px(16);
+      }
+      @media all and (max-width: 480px){
+        font-size: px(14);
       }
     }
     &::before {

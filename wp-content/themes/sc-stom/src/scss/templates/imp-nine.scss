@@ -6,6 +6,10 @@
     padding: px(112) 0;
     min-height: px(1523);
   }
+  @media all and (max-width: 768px){
+    padding: px(40) 0;
+    min-height: auto;
+  }
   &__container{
     overflow: hidden;
   }
@@ -13,10 +17,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media all and (max-width: 768px){
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   &__title{
     font-weight: 400;
     margin-bottom: 0;
+    @media all and (max-width: 768px){
+      br{
+        display: none;
+      }
+    }
     strong{
       font-weight: 600;
     }
@@ -27,11 +40,20 @@
     @media all and (max-width: 1920px){
       font-size: px(24);
     }
+    @media all and (max-width: 768px){
+      font-size: px(22);
+    }
+    @media all and (max-width: 500px){
+      font-size: px(16);
+    }
   }
   &__slider{
     margin-top: 82px;
     @media all and (max-width: 1920px){
       margin-top: px(82);
+    }
+    @media all and (max-width: 768px){
+      margin-top: px(40);
     }
   }
   &__slide{
@@ -40,11 +62,16 @@
     @media all and (max-width: 1920px){
       width: px(443);
     }
-    &.swiper-slide-active{
-      width: 800px;
-      @media all and (max-width: 1920px){
-        width: px(800);
+    @media all and (min-width: 769px){
+      &.swiper-slide-active{
+        width: 800px;
+        @media all and (max-width: 1920px){
+          width: px(800);
+        }
       }
+    }
+    @media all and (max-width: 480px){
+      width: px(260);
     }
   }
   &__img{
@@ -69,6 +96,9 @@
     @media all and (max-width: 1920px){
       font-size: px(32);
     }
+    @media all and (max-width: 480px){
+      font-size: px(22);
+    }
   }
   &__rev{
     font-size: 20px;
@@ -76,6 +106,9 @@
     line-height: 130%;
     @media all and (max-width: 1920px){
       font-size: px(20);
+    }
+    @media all and (max-width: 480px){
+      font-size: px(14);
     }
   }
 }

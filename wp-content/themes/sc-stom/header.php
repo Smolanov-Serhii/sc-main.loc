@@ -49,9 +49,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <header class="header">
     <div class="header__container main-container">
-        <div class="header__logo">
+        <a href="<?php echo get_home_url(); ?>" class="header__logo">
             <img src="<?php echo get_template_directory_uri() . '/img/header/logo.svg'; ?>" alt="Subareva Clinic">
-        </div>
+        </a>
         <div class="header__wrapper">
             <nav class="header__nav">
                 <div class="header__nav-close">

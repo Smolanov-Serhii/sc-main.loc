@@ -3,6 +3,9 @@
   @media all and (max-width: 1920px){
     margin: px(82) 0;
   }
+  @media all and (max-width: 768px){
+    margin: px(40) 0;
+  }
   &__container{
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +17,10 @@
     @media all and (max-width: 1920px){
       width: calc(100% - px(940))
     }
+    @media all and (max-width: 768px){
+      width: 100%;
+      margin-bottom: px(40);
+    }
   }
   &__img{
     width: 890px;
@@ -24,6 +31,9 @@
     @media all and (max-width: 1920px){
       width: px(890);
       border-radius: px(12);
+    }
+    @media all and (max-width: 768px){
+      width: 100%;
     }
     img{
       width: 100%;
@@ -47,6 +57,9 @@
       font-size: px(32);
       margin-bottom: px(82);
     }
+    @media all and (max-width: 768px){
+      margin-bottom: px(40);
+    }
   }
   &__desc{
     p{
@@ -55,6 +68,9 @@
       line-height: 120%;
       @media all and (max-width: 1920px){
         font-size: px(24);
+      }
+      @media all and (max-width: 768px){
+        font-size: px(16);
       }
     }
     i, em{
