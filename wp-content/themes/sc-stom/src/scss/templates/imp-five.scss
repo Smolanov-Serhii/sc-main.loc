@@ -1,0 +1,56 @@
+.imp-five{
+  background-color: #000135;
+  padding: 82px 0 60px 0;
+  @media all and (max-width: 1920px){
+    padding: px(82) 0 px(60) 0;
+  }
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__title{
+    margin-bottom: 48px;
+    color: #FFF;
+    font-weight: 400;
+    @media all and (max-width: 1920px){
+      margin-bottom: px(48);
+    }
+    strong{
+      font-weight: 600;
+    }
+  }
+  &__btns{
+    order: 2;
+    .button{
+      width: 300px;
+      margin-left: 24px;
+      @media all and (max-width: 1920px){
+        width: px(300);
+        margin-left: px(24);
+      }
+      &-blue{
+        background-color: #000135;
+        border: 1px solid #FFF;
+      }
+    }
+  }
+  &__desc{
+    order: 3;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    p{
+      margin-right: 2em;
+      color: #FFF;
+      font-size: 24px;
+      @media all and (max-width: 1920px){
+        font-size: px(24);
+      }
+      &:before{
+        content: "•";
+        margin-right: 1em;
+      }
+    }
+  }
+}

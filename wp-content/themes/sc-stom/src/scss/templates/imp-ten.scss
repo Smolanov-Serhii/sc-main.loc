@@ -1,0 +1,85 @@
+.imp-ten{
+   padding: 82px 0;
+  @media all and (max-width: 1920px){
+    padding: px(82) 0;
+  }
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title{
+    font-weight: 400;
+    margin-bottom: 0;
+    strong{
+      font-weight: 600;
+    }
+  }
+  &__desc{
+    font-size: 24px;
+    line-height: 120%;
+    @media all and (max-width: 1920px){
+      font-size: px(24);
+    }
+  }
+  &__list{
+    margin-top: 82px;
+    @media all and (max-width: 1920px){
+      margin-top: px(82);
+    }
+  }
+  &__item{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    @media all and (max-width: 1920px){
+      margin-bottom: px(32);
+      font-size: px(32);
+    }
+    &:hover{
+      div{
+        background-color: #000135;
+        color: #FFF;
+      }
+    }
+    &-text{
+      background-color: #F5F5F5;
+      padding: 28px 28px;
+      width: calc(100% - 292px);
+      border-radius: 12px;
+      transition: 0.3s ease;
+      @media all and (max-width: 1920px){
+        border-radius: px(12);
+        padding: px(28) px(28);
+        width: calc(100% - px(292));
+      }
+    }
+    &-price{
+      width: 260px;
+      transition: 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F5F5F5;
+      padding: 28px 10px;
+      border-radius: 12px;
+      color: #000;
+      @media all and (max-width: 1920px){
+        padding: px(28) px(10);
+        border-radius: px(12);
+
+      }
+    }
+  }
+  &__btns{
+    .button{
+      width: 300px;
+      margin-right: 24px;
+      @media all and (max-width: 1920px){
+        width: px(300);
+        margin-right: px(24);
+      }
+    }
+  }
+}

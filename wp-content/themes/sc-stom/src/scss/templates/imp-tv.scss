@@ -1,0 +1,73 @@
+.imp-tv{
+  background-color: #06151C;
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 50%;
+    padding-top: 222px;
+    padding-bottom: 124px;
+    @media all and (max-width: 1920px){
+      padding-top: px(222);
+      padding-bottom: px(124);
+    }
+  }
+  &__img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+    img{
+      height: 100%;
+      width: auto;
+    }
+  }
+  &__right{
+    position: relative;
+  }
+  &__content{
+    color: #FFF;
+    margin-bottom: 82px;
+    @media all and (max-width: 1920px){
+      margin-bottom: px(82);
+    }
+    h2{
+      font-size: 48px;
+      line-height: 120%;
+      margin-bottom: 1em;
+      color: #FFF;
+      @media all and (max-width: 1920px){
+        font-size: px(48);
+      }
+    }
+    p{
+      margin-bottom: 1em;
+      font-size: 28px;
+      line-height: normal;
+      font-weight: 400;
+      color: #FFF;
+      @media all and (max-width: 1920px){
+        font-size: px(28);
+      }
+      strong{
+        font-weight: 700;
+      }
+    }
+  }
+  &__btns{
+    .button{
+      width: 300px;
+      margin-right: 24px;
+      @media all and (max-width: 1920px){
+        width: px(300);
+        margin-right: px(24);
+      }
+      &-blue{
+        background-color: #06151C;
+        border: 1px solid #FFF;
+      }
+    }
+  }
+}

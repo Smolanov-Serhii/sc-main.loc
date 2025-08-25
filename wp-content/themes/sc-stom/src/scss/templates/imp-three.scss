@@ -1,0 +1,78 @@
+.imp-three{
+  padding-top: 74px;
+  padding-bottom: 82px;
+  background-color: #F6F6F6;
+  @media all and (max-width: 1920px){
+    padding-top: px(74);
+    padding-bottom: px(82);
+  }
+  &__title{
+    font-weight: 400;
+    strong{
+      font-weight: 600;
+    }
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    width: calc(25% - 20px);
+    border-radius: 30px;
+    border: 1px solid #E2E2E2;
+    background: #FFF;
+    padding: 42px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 279px;
+    position: relative;
+    overflow: hidden;
+    @media all and (max-width: 1920px){
+      width: calc(25% - px(20));
+      border-radius: px(30);
+      padding: px(42) px(24);
+      min-height: px(279);
+    }
+    &-title{
+      font-size: 24px;
+      margin-bottom: 1em;
+      font-weight: 600;
+      color: #000;
+      position: relative;
+      @media all and (max-width: 1920px){
+        font-size: px(24);
+      }
+    }
+    &-desc{
+      font-size: 24px;
+      margin-bottom: 0;
+      font-weight: 400;
+      color: #000;
+      position: relative;
+      @media all and (max-width: 1920px){
+        font-size: px(24);
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -30%;                 /* расширяем область, чтобы мягкие края не обрезались */
+      pointer-events: none;
+      background:
+              radial-gradient(
+                              circle at var(--x) var(--y),
+                              rgba(255,255,255,0.85) 15%,
+                              rgba(240,244,248,0.6) 30%,
+                              rgba(220,228,235,0.35) 45%,
+                              rgba(200,210,220,0.15) 55%,
+                              rgba(180,190,200,0.08) 85%,
+                              rgba(160,170,180,0.04) 95%,
+                              transparent 100%
+              );
+      transition: background-position .2s ease; /* на случай резких рывков */
+      border-radius: inherit;
+    }
+  }
+}
