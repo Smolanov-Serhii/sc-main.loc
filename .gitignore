@@ -1,1 +1,5 @@
 /wp-content/themes/sc-stom/node_modules/
+.idea
+.idea/
+/wp-content/themes/sc-stom/node_modules/*
+node_modules/
