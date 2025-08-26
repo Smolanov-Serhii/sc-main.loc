@@ -14,7 +14,7 @@ $post_id = get_the_ID();
                 <?php echo get_field('opysanye_bloka_11', $post_id)?>
             </div>
             <div class="imp-eleven__btns">
-                <div class="button button-blue">
+                <div class="button button-blue js-zapis">
                     <span><?php echo get_field('nadpys_na_knopke_11', $post_id)?></span>
                 </div>
             </div>

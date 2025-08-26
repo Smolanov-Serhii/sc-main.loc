@@ -10,10 +10,10 @@ $post_id = get_the_ID();
             <?php echo get_field('opysanye_pyatogo_bloka', $post_id)?>
         </div>
         <div class="imp-five__btns">
-            <div class="imp-five__btn button button-white">
+            <div class="imp-five__btn button button-white js-messenger">
                 <span><?php echo get_field('tekst_beloj_knopky_5', $post_id)?></span>
             </div>
-            <div class="imp-five__btn button button-blue">
+            <div class="imp-five__btn button button-blue js-zapis">
                 <span><?php echo get_field('tekst_tmnoj_knopky_5', $post_id)?></span>
             </div>
         </div>

@@ -32,10 +32,10 @@ $post_id = get_the_ID();
             ?>
         </div>
         <div class="imp-ten__btns">
-            <div class="button button-blue">
+            <div class="button button-blue js-messenger">
                 <span><?php echo get_field('tekst_tmnoj_knopky', $post_id)?></span>
             </div>
-            <div class="button button-white">
+            <div class="button button-white js-zapis">
                 <span><?php echo get_field('tekst_svetloj_knopky', $post_id)?></span>
             </div>
         </div>
