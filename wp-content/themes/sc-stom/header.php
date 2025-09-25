@@ -93,6 +93,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </nav>
             <!--                js-messenger-->
+            <div class="header__button button button-white js-zapis">
+                <span><?php echo get_field('tekst_tmnoj_knopky', 103)?></span>
+            </div>
             <a href="tel:+380987006700" class="header__button button button-blue ">
                     <span>
                         <?php

@@ -72,7 +72,7 @@ $post_id = 2;
 	</footer>
 
 <?php wp_footer(); ?>
-<div class="popup-zapis <?php if (get_the_ID() == 103){ echo 'implant-popup';} ?>" style="display: none">
+<div class="popup-zapis <?php if (get_the_ID() == 103 || get_the_ID() == 2){ echo 'implant-popup';} ?>" style="display: none">
     <div class="popup-zapis__container">
         <div class="popup-zapis__close">
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +83,8 @@ $post_id = 2;
         </div>
         <?php
             if (get_the_ID() == 2){
-                echo do_shortcode( '[contact-form-7 id="ef7e503" title="Контактная форма"]' );
+//                echo do_shortcode( '[contact-form-7 id="ef7e503" title="Контактная форма"]' );
+                echo do_shortcode( '[contact-form-7 id="40cf3c8" title="Форма имплантации"]' );
             } else {
                 echo do_shortcode( '[contact-form-7 id="40cf3c8" title="Форма имплантации"]' );
             }
