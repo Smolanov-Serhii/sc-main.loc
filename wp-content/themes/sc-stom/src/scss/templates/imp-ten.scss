@@ -31,11 +31,13 @@
   &__desc{
     font-size: 24px;
     line-height: 120%;
+    text-align: right;
     @media all and (max-width: 1920px){
       font-size: px(24);
     }
     @media all and (max-width: 768px){
       font-size: px(22);
+      text-align: left;
     }
     @media all and (max-width: 500px){
       font-size: px(14);
@@ -58,9 +60,11 @@
     display: flex;
     justify-content: space-between;
     font-size: 28px;
+    gap: 20px;
     @media all and (max-width: 1920px){
       margin-bottom: px(32);
       font-size: px(28);
+      gap: px(20);
     }
     @media all and (max-width: 768px){
       background-color: #F5F5F5;
@@ -68,6 +72,12 @@
       align-items: flex-start;
       padding: px(20);
       margin-bottom: px(12);
+      gap: unset;
+    }
+    &.single-item{
+      .imp-ten__item-text{
+        width: 100%;
+      }
     }
     &:hover{
       div{
@@ -80,13 +90,12 @@
     &-text{
       background-color: #F5F5F5;
       padding: 28px 28px;
-      width: calc(100% - 292px);
       border-radius: 12px;
       transition: 0.3s ease;
+      flex: 1;
       @media all and (max-width: 1920px){
         border-radius: px(12);
         padding: px(28) px(28);
-        width: calc(100% - px(292));
       }
       @media all and (max-width: 768px){
         padding: 0;
@@ -96,21 +105,28 @@
         text-align: center;
         margin-bottom: px(10);
       }
+      span{
+        font-size: 0.8em;
+        margin-top: 0.6em;
+        display: inline-block;
+      }
     }
     &-price{
-      width: 260px;
+      min-width: 260px;
       transition: 0.3s ease;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: #F5F5F5;
-      padding: 28px 10px;
+      padding: 28px 28px;
       border-radius: 12px;
       color: #000;
+      flex-shrink: 0;
+      white-space: nowrap;
       @media all and (max-width: 1920px){
-        padding: px(28) px(10);
+        padding: px(28) px(28);
         border-radius: px(12);
-        width: px(260);
+        min-width: px(260);
       }
       @media all and (max-width: 768px){
         padding: 0;

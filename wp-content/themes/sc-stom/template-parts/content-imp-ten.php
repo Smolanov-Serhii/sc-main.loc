@@ -18,13 +18,24 @@ $post_id = get_the_ID();
                     $text = get_sub_field('opysanye');
                     $price = get_sub_field('czena');
                     ?>
-                    <div class="imp-ten__item">
+                    <div class="imp-ten__item <?php if ($price == 'none'){ echo 'single-item';} ?>">
                         <div class="imp-ten__item-text">
                             <?php echo $text;?>
                         </div>
-                        <div class="imp-ten__item-price">
-                            <?php echo $price;?>
-                        </div>
+                        <?php
+                            if ($price == "none"){
+                                ?>
+
+                                <?php
+                            } else {
+                                ?>
+                                <div class="imp-ten__item-price">
+                                    <?php echo $price;?>
+                                </div>
+                                <?php
+                            }
+
+                        ?>
                     </div>
                 <?php
                 endwhile;

@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a
                                                 href="<?php echo get_field('ssylka_kosmetologiya', $post_id)?>"><?php echo get_field('tekst_kosmetologiya', $post_id)?></a></li>
                                 <?php
-                            } else if ($post_id == 103){
+                            } else if ($post_id == 103 || $post_id == 337 || $post_id == 387){
                                 if( have_rows('punkt_menyu',$post_id) ):
                                     while( have_rows('punkt_menyu',$post_id) ) : the_row();
                                         $link = get_sub_field('punkt_menyu');

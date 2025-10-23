@@ -112,6 +112,29 @@
         margin-top: px(14);
         padding-right: 0;
       }
+      strong{
+        font-weight: 600;
+      }
+    }
+  }
+  &-brek{
+    .imp-six__left{
+      width: calc(50% - 20px);
+      @media all and (max-width: 1920px){
+        width: calc(50% - px(20));
+      }
+      @media all and (max-width: 768px){
+        width: 100%;
+      }
+    }
+    .imp-six__list{
+      width: calc(50% - 20px);
+      @media all and (max-width: 1920px){
+        width: calc(50% - px(20));
+      }
+      @media all and (max-width: 768px){
+        width: 100%;
+      }
     }
   }
 }

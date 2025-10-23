@@ -72,7 +72,7 @@ $post_id = 2;
 	</footer>
 
 <?php wp_footer(); ?>
-<div class="popup-zapis <?php if (get_the_ID() == 103 || get_the_ID() == 2){ echo 'implant-popup';} ?>" style="display: none">
+<div class="popup-zapis <?php if (get_the_ID() == 103 || get_the_ID() == 2 || get_the_ID() == 387 || get_the_ID() == 509 || get_the_ID() == 602){ echo 'implant-popup';} ?>" style="display: none">
     <div class="popup-zapis__container">
         <div class="popup-zapis__close">
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,6 +85,14 @@ $post_id = 2;
             if (get_the_ID() == 2){
 //                echo do_shortcode( '[contact-form-7 id="ef7e503" title="Контактная форма"]' );
                 echo do_shortcode( '[contact-form-7 id="40cf3c8" title="Форма имплантации"]' );
+            } else if (get_the_ID() == 337) {
+                echo do_shortcode( '[contact-form-7 id="26cb925" title="Форма брекеты"]' );
+            } else if (get_the_ID() == 387) {
+                echo do_shortcode( '[contact-form-7 id="4d502e3" title="Форма удаления зубов"]' );
+            } else if (get_the_ID() == 509) {
+                echo do_shortcode( '[contact-form-7 id="756fe9d" title="Форма элайнеры"]' );
+            } else if (get_the_ID() == 602) {
+                echo do_shortcode( '[contact-form-7 id="8af4a10" title="Форма Виниры"]' );
             } else {
                 echo do_shortcode( '[contact-form-7 id="40cf3c8" title="Форма имплантации"]' );
             }

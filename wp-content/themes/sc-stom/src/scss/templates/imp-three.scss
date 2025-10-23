@@ -28,15 +28,16 @@
     padding: 42px 24px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    min-height: 279px;
+    justify-content: flex-start;
+    //justify-content: flex-end;
+    //min-height: 279px;
     position: relative;
     overflow: hidden;
     @media all and (max-width: 1920px){
       width: calc(25% - px(20));
       border-radius: px(30);
       padding: px(42) px(24);
-      min-height: px(279);
+      //min-height: px(279);
     }
     @media all and (max-width: 1024px){
       width: calc(50% - px(20));

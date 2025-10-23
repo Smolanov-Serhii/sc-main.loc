@@ -111,6 +111,18 @@ $(document).ready(function () {
         ImpOneSlider();
     }
 
+    function ImpTwotagsSlider() {
+        var ImpTwotagsSlider = new Swiper(".imp-two-tags .swiper-container", {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            loop: true,
+        });
+    }
+
+    if ($('.imp-two-tags .swiper-container').length) {
+        ImpTwotagsSlider();
+    }
+
     function ImpTwoSlider() {
         var ImpTwoSlider = new Swiper(".imp-two .swiper-container", {
             slidesPerView: 'auto',
@@ -248,6 +260,53 @@ $(document).ready(function () {
         });
     }
     ModalInit();
+
+    function VertSlider() {
+        const VertSlider = document.querySelectorAll('.imp-one-vert__slider');
+        VertSlider.forEach((slider, index) => {
+            const VertSliders = new Swiper(slider, {
+                direction: 'vertical',
+                loop: true,
+                slidesPerView: 'auto',
+                spaceBetween: 20,               // подправь под свой дизайн
+                allowTouchMove: false,          // чтобы не "дёргали" пальцем
+                speed: 12000,                   // чем больше — тем плавнее движение
+                autoplay: {
+                    delay: 1,                   // непрерывно (если ругается на 0 — поставь 1)
+                    disableOnInteraction: true, // не мешаем autoplay
+                    pauseOnMouseEnter: false,
+                    reverseDirection: index % 2 === 1, // второй едет в обратную сторону
+                },
+                on: {
+                    init(swiper) {
+                        // гарантированный запуск при инициализации
+                        swiper.autoplay.start();
+                    },
+                    autoplayStop(swiper) {
+                        // если вдруг autoplay остановился — перезапускаем
+                        swiper.autoplay.start();
+                    },
+                    autoplayPause(swiper) {
+                        // если где-то завис на паузе — тоже перезапускаем
+                        swiper.autoplay.start();
+                    },
+                },
+            });
+
+            // подстраховка: если через 3 секунды autoplay не активен — включить
+            setTimeout(() => {
+                if (!VertSliders.autoplay.running) {
+                    VertSliders.autoplay.start();
+                }
+            }, 3000);
+        });
+    }
+
+
+    if ($('.imp-one-vert__slider').length) {
+        VertSlider();
+
+    }
 
 });
 
