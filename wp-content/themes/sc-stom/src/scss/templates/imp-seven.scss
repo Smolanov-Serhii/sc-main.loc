@@ -6,6 +6,9 @@
   @media all and (max-width: 768px){
     margin: px(40) 0;
   }
+  &.swiper-container{
+    position: relative;
+  }
   &__container{
     display: flex;
     flex-wrap: wrap;
@@ -77,6 +80,26 @@
       font-style: italic;
       color: #00025C;
       font-weight: 200;
+    }
+  }
+  .swiper-pagination{
+    justify-content: flex-start;
+    display: flex;
+    bottom: 300px;
+    @media all and (max-width: 1920px){
+      bottom: px(300);
+    }
+    @media all and (max-width: 1200px){
+      bottom: px(200);
+    }
+    @media all and (max-width: 1024px){
+      position: relative;
+      margin-top: 40px;
+      justify-content: flex-end;
+      bottom: 0;
+    }
+    @media all and (max-width: 768px){
+      justify-content: center;
     }
   }
 }

@@ -60,7 +60,7 @@ get_header();
         <?php get_template_part( 'template-parts/content', 'imp-two-brek' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-three' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-four' ); ?>
-        <?php get_template_part( 'template-parts/content', 'imp-seven' ); ?>
+        <?php get_template_part( 'template-parts/content', 'imp-seven-slider' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-nine' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-ten' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-eleven' ); ?>

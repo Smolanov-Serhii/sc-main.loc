@@ -147,6 +147,21 @@ $(document).ready(function () {
         NineSlider();
     }
 
+    function impsevenslider() {
+        var impsevenslider = new Swiper(".imp-seven-slider.swiper-container", {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            pagination: {
+                el: ".imp-seven-slider .swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+
+    if ($('.imp-seven-slider.swiper-container').length) {
+        impsevenslider();
+    }
+
     function RevImpSlider() {
         var Revthumbs = new Swiper(".imp-eight__list.swiper-container", {
             slidesPerView: 5,
