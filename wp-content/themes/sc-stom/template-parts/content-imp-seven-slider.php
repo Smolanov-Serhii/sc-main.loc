@@ -19,7 +19,7 @@ $post_id = get_the_ID();
             <div class="imp-seven__img">
                 <img src="<?php echo get_field('fotografyya_doktora', $post_id)?>">
             </div>
-        </div>>
+        </div>
         <div class="imp-seven__container main-container swiper-slide">
             <div class="imp-seven__left">
                 <h2 class="imp-seven__name section-title">
