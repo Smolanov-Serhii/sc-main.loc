@@ -8,6 +8,10 @@
   }
   &.swiper-container{
     position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1920px;
+    overflow: hidden;
   }
   &__container{
     display: flex;
@@ -85,12 +89,12 @@
   .swiper-pagination{
     justify-content: flex-start;
     display: flex;
-    bottom: 300px;
+    bottom: 260px;
     @media all and (max-width: 1920px){
-      bottom: px(300);
+      bottom: px(260);
     }
     @media all and (max-width: 1200px){
-      bottom: px(200);
+      bottom: px(160);
     }
     @media all and (max-width: 1024px){
       position: relative;
