@@ -10,7 +10,7 @@ get_header();
         <?php get_template_part( 'template-parts/content', 'imp-four' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-five' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-six' ); ?>
-        <?php get_template_part( 'template-parts/content', 'imp-seven-slider' ); ?>
+        <?php get_template_part( 'template-parts/content', 'imp-seven' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-eight' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-nine' ); ?>
         <?php get_template_part( 'template-parts/content', 'imp-ten' ); ?>
